@@ -1,0 +1,229 @@
+h3{
+	color: lavender;
+	background-color: darkseagreen;
+	border-radius: 20px;
+	width: 280px;
+}
+*{
+	margin :0;
+	padding: 0;
+	font-family: lato;
+}
+
+
+.border{
+	height: 350px;
+	background-color:#dfffde ;
+	border: 10px solid darkseagreen;
+	border-radius: 20px;
+}
+
+.botones{
+	display: flex;
+	width: 230px;
+	height: 120px;
+	margin: 0 30px;
+
+	background-color:darkseagreen ;
+	border: 10px solid darkseagreen;
+	border-radius: 20px;
+}
+.imgen{
+
+	width: 250px;
+	height: 350px;
+	margin: 0 70px;
+	border-radius: 20px;
+}
+.container{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.container2{
+	margin-top: 50px;
+	display: flex;
+	justify-content: left;
+	text-align: center;
+}
+.img{
+	margin-left:250px;
+}
+
+
+/*De aqui en adelante empieza lo que es el buscador*/
+
+body{
+	background-image: url(fondo.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: arial, helvetica;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	width: 100%;
+}
+
+.header-top{
+	width: 100%;
+    display: flex;
+}
+
+.navegation{
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	padding:12px 0;
+    border-radius: 10px;
+}
+
+input[type="search"]{
+	padding: 10px;
+	padding-right: 35px;
+    width: 600px;
+    height: 60px;
+    border: 10px solid darkseagreen;
+    border-radius: 10px;
+}
+
+.search{
+	width: 70%;
+	max-width: 1000px;
+	margin: auto;
+	background: darkseagreen;
+	padding:0 10px;
+	padding-bottom: 5px;
+	max-height: 85%;
+	overflow-x: hidden;
+	display: none;
+    border-radius: 10px;
+}
+
+.search-table{
+	width: 100%;
+}
+
+tbody tr td{
+	width: 100%;
+}
+tbody{
+    margin-top: 100px;
+}
+tbody tr td a{
+	text-decoration: none;
+	font-size: 18px;
+	color: lavender;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 20px 0;
+	padding-left: 20px;
+    border-radius: 10px;
+}
+
+tbody tr td a:hover{
+	border: 2px solid lavender;
+}
+
+.search::-webkit-scrollbar{ 
+	background:seagreen; 
+    border-radius: 10px; 
+}
+
+.search::-webkit-scrollbar-button{
+ 	background:seagreen; 
+    border-radius: 10px; 
+}
+
+.search::-webkit-scrollbar-thumb{ 
+	background:lavender; 
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+	display: none;
+}
+.logo{
+    width: 250px; 
+    height: 250px;
+    margin-left: 250px;
+    margin-top: 30px;
+}
+
+/*Esta es la division hacia lo que es la consola de comandos*/
+
+.navegacion{
+    width: 900px;
+    height: 65px;
+    background-color: darkseagreen;
+    border-radius: 10px;
+    border: 5px;
+    margin-left: 25px;
+    font-size: 27px;
+    position: absolute;
+	top: 200px;
+    left: 28%;
+}
+.navegacion ul {
+    list-style: none;
+}
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: lavender;
+    font-family: 'Open sans';
+    text-decoration: none;
+    margin-left: 10px;
+}
+.menu li a:hover{
+    color: seagreen;
+    transition: all .4s;
+}
+/*submenu */
+
+.submenu{
+    position: absolute;
+    background-color: darkseagreen;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.1s;
+}
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: lavender;
+    font-family: 'Open sans';
+    text-decoration: none;
+    margin-left: 10px;
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.logo{
+    width: 250px; 
+    height: 250px;
+    margin-left: 250px;
+}
+.contenedor1{
+    display: flex;
+    margin-top: 30px;
+}
