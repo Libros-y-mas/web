@@ -458,7 +458,7 @@ a{
     transform: translateY(-10px);
 }
 
-.menu{
+.menuP{
     display: flex;
     justify-content: center;
     position: relative;
@@ -467,11 +467,11 @@ a{
     flex-wrap: wrap;
 }
 
-.menu-elem{
+.menuP-elem{
     list-style: none;
 }
 
-.menu-icon{
+.menuP-icon{
     color:lavender;
     font-size: 20px;
     display: inline-block;
@@ -481,7 +481,7 @@ a{
     transition: 0.3s;
 }
 
-.menu-icon:hover{
+.menuP-icon:hover{
     opacity: 1;
 }
 
