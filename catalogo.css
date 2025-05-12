@@ -423,6 +423,7 @@ a{
 
 .footer{
     position: relative;
+    width: 100%;
     background-color: darkseagreen;
     min-height: 100px;
     padding: 20px 50px ;
