@@ -13,8 +13,10 @@ body{
     font-family: 'Lato';
     color: lavender;
     background-image: url(fondo.jpg);
-    background-position: center center;
-    background-size: 2000px 20000px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .icon-cart{
