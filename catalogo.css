@@ -495,8 +495,5 @@ a{
 }
 .con{
 	display: flex;
-}
-.tenedor{
 	text-decoration: none;
-	margin-left:200px;
 }
