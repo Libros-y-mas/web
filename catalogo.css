@@ -496,14 +496,12 @@ a{
 .con{
 	margin-top: 25px;
 	display: flex;
-	justify-content: center;
-	text-align: center;
+	justify-content: left;
+	text-align: left;
+	margin-left:25px;
 	text-decoration: none;
 }
 .tenedor{
-	margin-top: 125px;
-	display: flex;
-	justify-content: center;
-	text-align: center;
 	text-decoration: none;
+	margin-left:200px;
 }
