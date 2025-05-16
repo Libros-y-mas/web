@@ -494,12 +494,7 @@ a{
     font-size: 20px;
 }
 .con{
-	margin-top: 25px;
 	display: flex;
-	justify-content: left;
-	text-align: left;
-	margin-left:25px;
-	text-decoration: none;
 }
 .tenedor{
 	text-decoration: none;
