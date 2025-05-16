@@ -477,3 +477,91 @@ text-align: center;
 	border: 10px solid darkseagreen;
 	border-radius: 20px;
 }
+
+/*De aqui en adelante empieza el pie de pagina de las paginas*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.pie{
+    display: flex;
+    justify-content: flex-end;
+	align-items: flex-end;
+    
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    background-color: darkseagreen;
+    min-height: 100px;
+    padding: 20px 50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px 10px 0 0;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.icon-elem{
+    list-style: none;
+}
+
+.icon{
+    color: lavender;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+.icon:hover{
+    transform: translateY(-10px);
+}
+
+.menuP{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.menuP-elem{
+    list-style: none;
+}
+
+.menuP-icon{
+    color:lavender;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.75;
+    transition: 0.3s;
+}
+
+.menuP-icon:hover{
+    opacity: 1;
+}
+
+.text{
+    color: lavender;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
