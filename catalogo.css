@@ -493,3 +493,17 @@ a{
     margin-bottom: 10px;
     font-size: 20px;
 }
+.con{
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+}
+.tenedor{
+	margin-top: 125px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+}
