@@ -1,77 +1,9 @@
-const btnCart = document.querySelector('.container-cart-icon');
-const containerCartProducts = document.querySelector(
-	'.container-cart-products'
-);
+let allProducts = JSON.parse(localStorage.getItem('carrito')) || [];
 
-btnCart.addEventListener('click', () => {
-	containerCartProducts.classList.toggle('hidden-cart');
-});
+showHTML(); // Mostrar productos guardados al cargar
 
-/* ========================= */
-const cartInfo = document.querySelector('.cart-product');
-const rowProduct = document.querySelector('.row-product');
+// ... resto del código ...
 
-// Lista de todos los contenedores de productos
-const productsList = document.querySelector('.container-items');
-
-// Variable de arreglos de Productos
-let allProducts = [];
-
-const valorTotal = document.querySelector('.total-pagar');
-
-const countProducts = document.querySelector('#contador-productos');
-
-const cartEmpty = document.querySelector('.cart-empty');
-const cartTotal = document.querySelector('.cart-total');
-
-productsList.addEventListener('click', e => {
-	if (e.target.classList.contains('btn-add-cart')) {
-		const product = e.target.parentElement;
-
-		const infoProduct = {
-			quantity: 1,
-			title: product.querySelector('h2').textContent,
-			price: product.querySelector('p').textContent,
-		};
-
-		const exits = allProducts.some(
-			product => product.title === infoProduct.title
-		);
-
-		if (exits) {
-			const products = allProducts.map(product => {
-				if (product.title === infoProduct.title) {
-					product.quantity++;
-					return product;
-				} else {
-					return product;
-				}
-			});
-			allProducts = [...products];
-		} else {
-			allProducts = [...allProducts, infoProduct];
-		}
-
-		showHTML();
-	}
-});
-
-rowProduct.addEventListener('click', e => {
-	if (e.target.classList.contains('icon-close')) {
-		const product = e.target.parentElement;
-		const title = product.querySelector('p').textContent;
-
-		allProducts = allProducts.filter(
-			product => product.title !== title
-		);
-
-		console.log(allProducts);
-
-		showHTML();
-	}
-});
-
-// Funcion para mostrar  HTML
 const showHTML = () => {
 	if (!allProducts.length) {
 		cartEmpty.classList.remove('hidden');
@@ -83,7 +15,6 @@ const showHTML = () => {
 		cartTotal.classList.remove('hidden');
 	}
 
-	// Limpiar HTML
 	rowProduct.innerHTML = '';
 
 	let total = 0;
@@ -117,11 +48,13 @@ const showHTML = () => {
 
 		rowProduct.append(containerProduct);
 
-		total =
-			total + parseInt(product.quantity * product.price.slice(1));
-		totalOfProducts = totalOfProducts + product.quantity;
+		total += parseInt(product.quantity * product.price.slice(1));
+		totalOfProducts += product.quantity;
 	});
 
 	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
+
+	// Guardar carrito
+	localStorage.setItem('carrito', JSON.stringify(allProducts));
 };
