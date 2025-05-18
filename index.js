@@ -93,7 +93,7 @@ const showHTML = () => {
 		const containerProduct = document.createElement('div');
 		containerProduct.classList.add('cart-product');
 
-		containerProduct.innerHTML = 
+		containerProduct.innerHTML = `
             <div class="info-cart-product">
                 <span class="cantidad-producto-carrito">${product.quantity}</span>
                 <p class="titulo-producto-carrito">${product.title}</p>
@@ -113,7 +113,7 @@ const showHTML = () => {
                     d="M6 18L18 6M6 6l12 12"
                 />
             </svg>
-        ;
+        `;
 
 		rowProduct.append(containerProduct);
 
@@ -122,6 +122,6 @@ const showHTML = () => {
 		totalOfProducts = totalOfProducts + product.quantity;
 	});
 
-	valorTotal.innerText = $${total};
+	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
 };
