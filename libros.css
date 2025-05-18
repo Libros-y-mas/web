@@ -504,4 +504,6 @@ a{
 }
 .color{
 	background-color: darkseagreen;	
+	border-radius: 10px;
+	border: 10px solid darkseagreen;
 }
