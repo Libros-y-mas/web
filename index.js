@@ -1,5 +1,3 @@
-let allProducts = JSON.parse(localStorage.getItem('carrito')) || [];
-
 const btnCart = document.querySelector('.container-cart-icon');
 const containerCartProducts = document.querySelector(
 	'.container-cart-products'
