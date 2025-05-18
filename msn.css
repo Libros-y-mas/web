@@ -76,8 +76,8 @@ body{
     top: 50px;
     right: 0;
 
-    background-color: seagreen;
-    width: 0px;
+    background-color: darkseagreen;
+    width: 400px;
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
     border-radius: 10px;
@@ -97,7 +97,7 @@ body{
 .info-cart-product{
     display: flex;
     justify-content: space-between;
-    background-color: seagreen;
+    background-color: darkseagreen;
     flex: 0.8;
 }
 
