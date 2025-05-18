@@ -508,4 +508,7 @@ a{
 	border: 10px solid darkseagreen;
 	width: 800px;
     	height: 600px;
+	text-align:right;
+	/* Arriba | Derecha | Abajo | Izquierda */
+	margin: 0 100px 200px 0;
 }
