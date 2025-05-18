@@ -97,7 +97,7 @@ body{
 .info-cart-product{
     display: flex;
     justify-content: space-between;
-    background-color: darkseagreen;
+    background-color: seagreen;
     flex: 0.8;
 }
 
