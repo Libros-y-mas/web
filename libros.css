@@ -506,7 +506,9 @@ a{
 	background-color: darkseagreen;	
 	border-radius: 10px;
 	border: 10px solid darkseagreen;
-	margin-left:500px;
+    	position: absolute;
+    	top: 200px;
+    	right: 50%;
 	width: 800px;
     	height: 600px;
 }
