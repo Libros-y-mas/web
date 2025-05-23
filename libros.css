@@ -512,3 +512,14 @@ a{
 	width: 800px;
     	height: 500px;
 }
+
+@media screen and (max-width: 1080px){
+.color{
+	background-color: darkseagreen;	
+	border-radius: 10px;
+	border: 10px solid darkseagreen;
+	margin-top:20%;
+	margin-left:40%;
+}
+
+}
