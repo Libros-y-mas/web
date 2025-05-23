@@ -707,7 +707,7 @@ h1{
     background-color: blueviolet;
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 1080px){
     /* Catalogo/Carrito */
 *{
     margin: 0;
