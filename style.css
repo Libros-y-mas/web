@@ -1413,24 +1413,12 @@ h1{
         width: 400%;
     }
 
-    .slide img {
-        height: auto;
-    }
+.slide img{
+    width: 500px;
+    height: 250px;
+}
 
     .navegation-manual {
         margin-top: -30px;
     }
 	}
-@media (max-width: 768px) {
-    .slides {
-        width: 400%;
-    }
-
-    .slide img {
-        height: auto;
-    }
-
-    .navegation-manual {
-        margin-top: -30px;
-    }
-}
