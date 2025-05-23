@@ -1409,4 +1409,15 @@ h1{
 .close:hover{
     background-color: blueviolet;
 }
+    .slides {
+        width: 400%;
+    }
+
+    .slide img {
+        height: auto;
+    }
+
+    .navegation-manual {
+        margin-top: -30px;
+    }
 	}
